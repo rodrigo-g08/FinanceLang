@@ -30,6 +30,9 @@ class FinanceEvaluator(FinanceLangVisitor):
     def visitStmtProject(self, ctx: FinanceLangParser.StmtProjectContext):
         return self.visit(ctx.projectOperation())
 
+    def visitStmtShow(self, ctx):
+        return self.visit(ctx.showOperation())
+
     def visitStmtExpr(self, ctx: FinanceLangParser.StmtExprContext):
         value = self.visit(ctx.expr())
         if value is not None:
@@ -54,6 +57,17 @@ class FinanceEvaluator(FinanceLangVisitor):
         del self.symbol_table[name]
         self.emit(f"[Eliminar] Operación '{name}' borrada de la memoria.")
         return None
+    
+    def visitShowOperation(self, ctx):
+        name = ctx.ID().getText()
+
+        if name not in self.symbol_table:
+            self.error(f"No se puede mostrar '{name}' porque no existe.")
+            return None
+
+        value = self.symbol_table[name]
+        self.emit(f"[Mostrar] {name} = {value:,.2f}")
+        return value 
 
     def visitProjectOperation(self, ctx: FinanceLangParser.ProjectOperationContext):
         name = ctx.ID().getText()

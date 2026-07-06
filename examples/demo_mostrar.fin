@@ -1,0 +1,4 @@
+crear operacion capital = 1000;
+crear operacion interes = capital * 0.10;
+mostrar capital;
+mostrar interes;
