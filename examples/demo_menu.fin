@@ -1,0 +1,9 @@
+crear operacion capital = 1000;
+crear operacion prestamo = 5000;
+interes simple interes_simple = capital con tasa 0.02 por 12 meses;
+interes compuesto monto_futuro = capital con tasa 0.02 por 12 meses;
+cuota mensual cuota_pago = prestamo con tasa 0.015 por 24 meses;
+mostrar capital;
+mostrar interes_simple;
+mostrar monto_futuro;
+mostrar cuota_pago;
