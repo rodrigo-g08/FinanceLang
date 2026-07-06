@@ -29,6 +29,26 @@ class FinanceLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by FinanceLangParser#stmtShow.
+    def visitStmtShow(self, ctx:FinanceLangParser.StmtShowContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FinanceLangParser#stmtSimpleInterest.
+    def visitStmtSimpleInterest(self, ctx:FinanceLangParser.StmtSimpleInterestContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FinanceLangParser#stmtCompoundInterest.
+    def visitStmtCompoundInterest(self, ctx:FinanceLangParser.StmtCompoundInterestContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FinanceLangParser#stmtMonthlyPayment.
+    def visitStmtMonthlyPayment(self, ctx:FinanceLangParser.StmtMonthlyPaymentContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by FinanceLangParser#stmtExpr.
     def visitStmtExpr(self, ctx:FinanceLangParser.StmtExprContext):
         return self.visitChildren(ctx)
@@ -46,6 +66,26 @@ class FinanceLangVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by FinanceLangParser#projectOperation.
     def visitProjectOperation(self, ctx:FinanceLangParser.ProjectOperationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FinanceLangParser#showOperation.
+    def visitShowOperation(self, ctx:FinanceLangParser.ShowOperationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FinanceLangParser#simpleInterestOperation.
+    def visitSimpleInterestOperation(self, ctx:FinanceLangParser.SimpleInterestOperationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FinanceLangParser#compoundInterestOperation.
+    def visitCompoundInterestOperation(self, ctx:FinanceLangParser.CompoundInterestOperationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by FinanceLangParser#monthlyPaymentOperation.
+    def visitMonthlyPaymentOperation(self, ctx:FinanceLangParser.MonthlyPaymentOperationContext):
         return self.visitChildren(ctx)
 
 
