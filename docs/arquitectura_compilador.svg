@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430">
+  <rect width="1100" height="430" fill="#ffffff"/>
+  <defs>
+    <style>
+      .title{font-family:Arial,sans-serif;font-size:24px;font-weight:700;fill:#1f2937}
+      .box{fill:#f8fafc;stroke:#2563eb;stroke-width:2;rx:14;ry:14}
+      .box2{fill:#f0fdf4;stroke:#16a34a;stroke-width:2;rx:14;ry:14}
+      .box3{fill:#fff7ed;stroke:#ea580c;stroke-width:2;rx:14;ry:14}
+      .txt{font-family:Arial,sans-serif;font-size:15px;fill:#111827}
+      .small{font-family:Arial,sans-serif;font-size:12px;fill:#374151}
+      .arrow{stroke:#64748b;stroke-width:2.5;marker-end:url(#arrowhead)}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  <text x="40" y="42" class="title">Arquitectura del compilador FinanceLang - Hito 2</text>
+
+  <rect x="40" y="90" width="155" height="95" class="box"/>
+  <text x="65" y="122" class="txt">Entrada .fin</text>
+  <text x="60" y="150" class="small">Programa escrito</text>
+  <text x="60" y="170" class="small">en FinanceLang</text>
+
+  <line x1="195" y1="137" x2="250" y2="137" class="arrow"/>
+
+  <rect x="250" y="90" width="165" height="95" class="box"/>
+  <text x="278" y="122" class="txt">Lexer ANTLR4</text>
+  <text x="275" y="150" class="small">Reconoce tokens:</text>
+  <text x="275" y="170" class="small">IDs, números, keywords</text>
+
+  <line x1="415" y1="137" x2="470" y2="137" class="arrow"/>
+
+  <rect x="470" y="90" width="165" height="95" class="box"/>
+  <text x="500" y="122" class="txt">Parser ANTLR4</text>
+  <text x="495" y="150" class="small">Valida la gramática</text>
+  <text x="495" y="170" class="small">y genera el AST</text>
+
+  <line x1="635" y1="137" x2="690" y2="137" class="arrow"/>
+
+  <rect x="690" y="90" width="175" height="95" class="box2"/>
+  <text x="716" y="122" class="txt">Análisis semántico</text>
+  <text x="715" y="150" class="small">Tabla de símbolos</text>
+  <text x="715" y="170" class="small">validación de errores</text>
+
+  <line x1="865" y1="137" x2="920" y2="137" class="arrow"/>
+
+  <rect x="920" y="90" width="145" height="95" class="box3"/>
+  <text x="947" y="122" class="txt">Back end</text>
+  <text x="940" y="150" class="small">Evaluador</text>
+  <text x="940" y="170" class="small">LLVM IR inicial</text>
+
+  <rect x="250" y="260" width="175" height="95" class="box"/>
+  <text x="278" y="292" class="txt">Driver CLI</text>
+  <text x="275" y="320" class="small">Modos: tokens, tree,</text>
+  <text x="275" y="340" class="small">eval e ir</text>
+
+  <rect x="470" y="260" width="175" height="95" class="box2"/>
+  <text x="505" y="292" class="txt">Pruebas</text>
+  <text x="495" y="320" class="small">Casos válidos,</text>
+  <text x="495" y="340" class="small">semánticos y sintácticos</text>
+
+  <rect x="690" y="260" width="175" height="95" class="box3"/>
+  <text x="717" y="292" class="txt">Plan final</text>
+  <text x="715" y="320" class="small">Completar LLVM,</text>
+  <text x="715" y="340" class="small">ejecución y validación</text>
+
+  <line x1="332" y1="185" x2="332" y2="260" class="arrow"/>
+  <line x1="552" y1="185" x2="552" y2="260" class="arrow"/>
+  <line x1="777" y1="185" x2="777" y2="260" class="arrow"/>
+</svg>

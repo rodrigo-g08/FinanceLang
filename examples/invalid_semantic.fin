@@ -1,0 +1,5 @@
+crear operacion capital = 1000;
+crear operacion resultado = deuda + 100;
+crear operacion division = 100 / 0;
+eliminar operacion noExiste;
+proyectar capital a 12 meses con tasa 0 - 1.5;

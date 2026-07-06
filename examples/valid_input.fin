@@ -1,0 +1,5 @@
+crear operacion capital = 1000;
+crear operacion interes = capital * 0.10;
+crear operacion total = capital + interes;
+proyectar total a 12 meses con tasa 0.05;
+eliminar operacion interes;
